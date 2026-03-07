@@ -1,0 +1,15 @@
+{
+  "API": {
+    "LOGGER": false,
+    "PORT": 6122,
+    "ActivateWorkshop": false
+  },
+  "DB": {
+    "ADDR": "mongodb://127.0.0.1:27017"
+  },
+  "Workshop": {
+    "IP": "127.0.0.1",
+    "PORT": 12222,
+    "KEY": "6983988488599"
+  }
+}
