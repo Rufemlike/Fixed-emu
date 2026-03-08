@@ -1,11 +1,9 @@
 const config = require('./config.json');
-
 const fs = require("fs");
 const {startPeriodicTask} = require("./ticketManager");
 const fastify = require('fastify')({
-    logger:true
-})
-
+    logger: config.API.LOGGER
+});
 
 module.exports.Init = function (callback) {
     fastify.register(require("@fastify/cors"), {
@@ -22,5 +20,4 @@ module.exports.Init = function (callback) {
         callback();
     });
     startPeriodicTask();
-
 }
